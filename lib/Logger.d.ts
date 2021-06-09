@@ -1,4 +1,4 @@
-import "./types/types";
+import './types/types';
 export declare class Logger {
     private scope;
     private logType;
