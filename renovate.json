@@ -1,0 +1,41 @@
+
+{
+  "extends": [
+    "config:base"
+  ],
+  "automergeType": "pr",
+  "packageRules": [
+    {
+      "packageNames": [
+          "@babel/cli",
+          "@babel/core",
+          "@babel/plugin-proposal-class-properties",
+          "@babel/preset-env",
+          "@babel/preset-typescript"
+      ],
+      "groupName": "Babel core packages",
+      "extends": ["schedule:monthly"]
+    },
+    {
+      "packageNames": [
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "eslint",
+          "eslint-config-prettier",
+          "eslint-plugin-prettier"
+      ],
+      "groupName": "Eslint core packages",
+      "extends": ["schedule:monthly"]
+    },
+    {
+      "packageNames": [
+          "typescript"
+      ],
+      "groupName": "Typescript update",
+      "extends": ["schedule:monthly"]
+    }
+  ],
+  "baseBranches": [
+    "staging"
+  ]
+}
