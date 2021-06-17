@@ -22,4 +22,12 @@
   
   [ ] - **Show log source** : show source of the log, i mean file
 
-  [ ] - **Timing functions** : this should be something like `console.time`
+  [ ] - **Profiling/Timing functions** : this should be something like `console.time`
+
+  [ ] - **Prod and Dev configs** : this should let user determine what level should he want logger to consoles on depending on the environment
+
+  [ ] - **Le user format the output of the logger** : simple take ref [here](https://github.com/winstonjs/winston#formats)
+  
+  [ ] - **Let user set his custom log levels** : ref here [](https://github.com/winstonjs/winston#formats)
+  
+  [ ] - **Exit on error** Let user determin if app will exit on error or not especially node
